@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ladrones</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header><h1>Formulario Ladronzuelos</h1></header>
+        <form class="form">
+            <fieldset>
+                <legend>Los Ladronzuelos de Bicicletas</legend>
+                <label for="dia">Día:</label>
+                <input type="date" id="dia" name="dia" tabindex="1" required><br>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" tabindex="2" required><br>
+
+                <label for="color">Color de la bicicleta:</label>
+                <input type="color" id="color" name="color" tabindex="3"><br>
+
+                <label for="precio">Rango de precio (0€ - 5400€):</label>
+                <input type="range" id="precio" name="precio" min="0" max="5400" step="100" value="0" tabindex="4"><br>
+
+                <label for="tipo">Tipo de bicicleta:</label>
+                <select id="tipo" name="tipo" tabindex="5">
+                    <option value="Paseo">Paseo</option>
+                    <option value="Señorial">Señorial</option>
+                    <option value="Anti-plebeyos">Anti-plebeyos</option>
+                    <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+                    <option value="Montaña">Montaña</option>
+                    <option value="Gamusinos">Gamusinos</option>
+                    <option value="Hueleflores premium">Hueleflores premium</option>
+                    <option value="Fango lover">Fango lover</option>
+                    <option value="Carreras">Carreras</option>
+                    <option value="Metroymedio">Metro y medio</option>
+                    <option value="3 de la tarde. Fluorescente edition">Fluorescente edition</option>
+                    <option value="Grupitors">Grupitors</option>
+                </select><br>
+
+                <label for="accesorios">Accesorios:</label>
+                <select multiple id="accesorios" name="accesorios[]" tabindex="6">
+                    <option value="Ruedines">Ruedines</option>
+                    <option value="Pegatinas">Pegatinas</option>
+                    <option value="Cestita">Cestita</option>
+                    <option value="Bomba de aire">Bomba de aire</option>
+                    <option value="Timbre">Timbre</option>
+                    <option value="Foco">Foco</option>
+                </select><br>
+
+                <label for="marca">¿Qué marca era?</label>
+                <datalist id="marcas">
+                    <option value="specialized">
+                    <option value="trek">
+                    <option value="merida">
+                    <option value="scott">
+                    <option value="giant">
+                    <option value="cube">
+                    <option value="lapierre">
+                    <option value="orbea">
+                    <option value="cannondale">
+                    <option value="bmc">
+                    <option value="canyon">
+                    <option value="look">
+                    <option value="protek">
+                    <option value="megamo">
+                    <option value="pinarello">
+                    <option value="bianchi">
+                    <option value="bh">
+                    <option value="factor">
+                    <option value="ghost">
+                    <option value="cervélo">
+                    <option value="argon">
+                </datalist>
+                <input type="text" id="marca" name="marca" list="marcas" tabindex="7"><br>
+            </fieldset>
+
+            <input type="reset" value="Limpiar">
+            <input type="submit" value="Enviar">
+        </form>
+</body>
+</html>
