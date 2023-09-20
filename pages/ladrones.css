@@ -3,6 +3,20 @@ body {
     color: white;
 }
 
+nav {
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+}
+
 
 form {
     max-width: 400px;

@@ -1,31 +1,30 @@
-h1 {
-    text-align: center;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #ddd;
 }
 
-div.formulario{
-    font-family: Arial, sans-serif;
-    background-color: #ddd;
-    padding: 0;
-    width: 30%;
-    margin: auto;
+nav {
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
 }
 
-div.circunstancias {
-    padding: 0;
-    width: 30%;
-    margin: auto;
-    font-family: Arial, sans-serif;
-    background-color: #ddd;
+ul {
+    list-style: none;
 }
+
+
+h1 {
+    text-align: center;
+}
+
 
 form {
     max-width: 400px;
-    margin: auto;
+    margin: 0 auto;
+    background-color: #f6efef;
+    border: 2px solid rgb(6, 6, 6);
+    padding: 20px;
 }
 
 
@@ -33,12 +32,26 @@ fieldset {
     border: 1px solid #ccc;
     padding: 20px;
 }
+
+
 label {
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
 }
+
 input[type="text"],
 input[type="number"],
+
+
+
+legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
 textarea {
     width: 100%;
     padding: 10px;
@@ -52,6 +65,10 @@ input[type="checkbox"] {
 }
 input[type="reset"],
 input[type="submit"] {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     background-color: #007BFF;
     color: #090909;
     padding: 10px 20px;
